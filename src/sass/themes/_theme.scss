@@ -1,26 +1,29 @@
-@mixin light-theme {
-    background-color: $primär-färg;
-    color: #333;
-  
-    a {
-      color: #007bff;
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: $primär-färg;
+        color: #333;
+
+        a {
+            color: #007bff;
+        }
+
+        svg {
+            fill: #333;
+        }
     }
-  
-    svg {
-      fill: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #212121;
+        color: #fff;
+
+        a {
+            color: #fff;
+        }
+
+        svg {
+            fill: #fff;
+        }
     }
-  }
-  
-  @mixin dark-theme {
-    background-color: #212121;
-    color: #fff;
-  
-    a {
-      color: #fff;
-    }
-  
-    svg {
-      fill: #fff;
-    }
-  }
-  
+}

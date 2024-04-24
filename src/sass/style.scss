@@ -7,18 +7,10 @@
 
 /* Grundläggande */
 body {
-    // Använd ljust tema som standard
-  @include light-theme;
-
-  &.dark-mode {
-   // mörkt tema för klassen .dark-mode
-    @include dark-theme;
-  }
     
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: $primär-färg;
 }
 
 /* Huvudmeny */
