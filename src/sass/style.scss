@@ -1,14 +1,21 @@
+@import './abstracts/variables';
+@import './base/resets';
+@import './abstracts/functions';
+// @import './themes/';
+
+
 /* Grundläggande */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 20px;
-    background-color: #50abe7;
+    background-color: $primär-färg;
 }
 
 /* Huvudmeny */
 header {
-    background-color: #e15808;
+    background-color: $sekundär-färg;
+    border-radius: $border-radius;
     height: 60px;
     display: flex;
     align-items: center;
@@ -52,7 +59,7 @@ a {
 }
 
 .nav-link:hover {
-    color: dodgerblue;
+    color: $accent-färg;
 }
 
 /* HAMBURGERMENU START */

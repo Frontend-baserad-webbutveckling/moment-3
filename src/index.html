@@ -5,10 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moment 1</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="sass/style.scss">
 </head>
 
-<body>
+<body class="gradient">
     <header>
         <nav class="navbar">
             <a href="#sektion1" class="site_name">Moment 1</a>
@@ -88,22 +88,7 @@
                 transpilering av samtliga filer och flyttade dessa optimerade filer till dist-mappen
             </p>
         </section>
-        <section id="section4">
-            <h1>Ramschema</h1>
-            <input type="text" id="search-input" placeholder="Sök kurs (kurskod eller kursnamn)">
-            <table id="course-table">
-                <thead>
-                    <tr>
-                        <th data-type="code">Kurskod</th>
-                        <th data-type="name">Kursnamn</th>
-                        <th data-type="progression">Progression</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <!-- Rader fyllda från main.js -->
-                </tbody>
-            </table>
-        </section>
+      
     </main>
 
     <script src="js/main.js" type="module"></script>
