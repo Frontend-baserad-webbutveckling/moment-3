@@ -53,13 +53,13 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     gap: 60px;
 }
 
 .site_name {
     font-size: 2em;
     padding-right: 70px;
+    
 }
 
 .nav-link {
@@ -68,7 +68,7 @@ header {
 }
 
 .nav-link:hover {
-    color: $accent-färg;
+    color: lighten($accent-färg, 40%);
 }
 
 /* HAMBURGERMENU START */
@@ -105,6 +105,7 @@ section {
         font-weight: 400;
         padding: 10px;
         text-align: center;
+        @include apply-border(dotted);
     }
 
     p {
@@ -116,11 +117,13 @@ section {
         width: 80%;
         margin: 20px auto;
         display: flex;
+        @include apply-border(dashed);
     }
 
 }
 
-.sass, .images {
+.sass,
+.images {
     @extend section;
 }
 

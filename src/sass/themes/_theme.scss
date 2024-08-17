@@ -1,6 +1,7 @@
 @media (prefers-color-scheme: light) {
     body {
         background-color: $primär-färg;
+    
         color: #333;
 
         a {
@@ -16,10 +17,10 @@
 @media (prefers-color-scheme: dark) {
     body {
         background-color: #212121;
-        color: #fff;
+        color: darken(rgb(189, 166, 135), 30%);
 
         a {
-            color: #fff;
+            color: #ffffff;
         }
 
         svg {

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
@@ -17,17 +17,19 @@
                 <li class="nav-item">
                     <a href="index.html" class="nav-link">Startsida</a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="#" class="nav-link">SASS</a>
+                    <a href="#" class="nav-link">Bilder</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#sektion2" class="nav-link">Bilder</a>
+                    <a href="#" class="nav-link">Arbetsprocessen</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#sektion3" class="nav-link">Arbetsprocessen</a>
+                    <a href="#" class="nav-link">Ramschema</a>
                 </li>
+
                 <li class="nav-item">
-                    <a href="#sektion4" class="nav-link">Ramschema</a>
+                    <a href="sass.html" class="nav-link">SASS</a>
                 </li>
             </ul>
             <div class="hamburger">
@@ -40,18 +42,40 @@
     <main>
         <article class="sass">
             <h1>Arbeta med CSS-preprocessores</h1>
-            <p></p>
+            <p>Efter att ha arbetat med SASS har jag märkt flera fördelar och några nackdelar.<br>
+                På plussidan gör variabler och mixins det enkelt att återanvända kod, vilket förbättrar både
+                effektivitet och underhållbarhet. <br>
+                exempelvis att kunna lägga till några färgteman, med primär, sekundär och accent färger i variabler och
+                sen bara behöva ändra EN variabel istället för flera element är väldigt smidigt. <br> Eller om man som
+                jag lägger till border-radius på hundra tals element ibland känns det som, så kan jag testa olika värden
+                genom endast en variabel, speciellt då jag gärna vill ha samma border värde på fler element. <br>
+                Nästlade regler hjälper till att strukturera stilar bättre, vilket ger mer organiserad kod och att man
+                kan göra. Detta var faktiskt något jag trodde CSS i början naturligt kunde göra, då det kändes logiskt
+                när jag skulle hitta en selector, så extremt bra funktion.
+                <br><br>
+                Nackdelarna skulle väl vara en aning ökad komplexitet, särskilt med felsökning, eftersom det blir
+                svårare att hitta problem i kompilerad CSS.
+                Att parcel sköter konvertering och minifiering automatiskt gör också installation och att börja använda
+                SASS busenkelt.
+                <br><br>
+                4 av 5 toasts!
+
+            </p>
         </article>
         <article class="images">
             <h1>Bilder</h1>
             <picture>
-                <img src="images/wallhaven-5gj6y1.png?as=webp&width=1200" type="image/webp" alt="wallpaper">
-                <img src="images/wallhaven-kx6ow1.png?as=webp&width=1200" type="image/webp" alt="wallpaper">
+                <source srcset="images/wallhaven-5gj6y1.png?as=webp&width=1200" type="image/webp">
+                <img src="images/wallhaven-5gj6y1.png" alt="wallpaper">
+            </picture>
+            <picture>
+                <source srcset="images/wallhaven-kx6ow1.png?as=webp&width=1200" type="image/webp">
+                <img src="images/wallhaven-kx6ow1.png" alt="wallpaper">
             </picture>
         </article>
 
     </main>
-
+    <script src="js/main.js" type="module"></script>
 </body>
-<script src="js/main.js" type="module"></script>
+
 </html>
